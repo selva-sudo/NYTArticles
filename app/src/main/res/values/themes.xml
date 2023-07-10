@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Articles" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">#7ed321</item>
+        <!-- Secondary brand color. -->
+        <item name="android:colorSecondary">@android:color/transparent</item>
+        <!-- Status bar color. -->
+        <!--<item name="android:statusBarColor">@color/HEX_8a000000</item>-->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/blackblack</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation duration. -->
+        <item name="windowSplashScreenBackground">@color/white</item>
+
+        <!-- Use windowSplashScreenAnimatedIcon to add either a drawable or an
+             animated drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_rm_splash</item>
+        <!-- Required for animated icons -->
+        <item name="windowSplashScreenAnimationDuration">400</item>
+
+        <!-- Set the theme of the Activity that directly follows your splash screen. -->
+        <!-- Required -->
+        <item name="postSplashScreenTheme">@style/Theme.Reshamandi.NoActionBar</item>
+    </style>
+
+    <style name="Theme.Reshamandi.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>
